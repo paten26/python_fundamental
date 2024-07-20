@@ -13,3 +13,11 @@ if harga_kopi == 5000:
     print("beli 2 gelas")
 else:
     print("beli 1 gelas")
+
+#3.PENGULANGAN
+#Contoh soal : Levi menyuruh saya meminum seluruh kopi yang ada
+Jumlah_kopi = 10
+Jumlah_kopi_sudah_diminum = 0
+
+for Jumlah_kopi_sudah_diminum in range (1, Jumlah_kopi+1):
+    print(f"kopi yang sudah diminum = {Jumlah_kopi_sudah_diminum} gelas")
