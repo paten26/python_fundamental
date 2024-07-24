@@ -42,12 +42,22 @@ while Jumlah_kopi_sudah_diminum < Jumlah_kopi : #while (selama)
 print("\nCONTOH PENGULANGAN DENGAN WHILE 2")
 #Contoh soal : Levi menyuruh saya meminum seluruh kopi yang ada sampai habis
 Jumlah_kopi = 10
-Jumlah_kopi_sudah_diminum_dan_habis = 10
+print('levi berkata, "habiskan semua kopi"')
+Jumlah_kopi_sudah_diminum = 0
 
-while Jumlah_kopi_sudah_diminum_dan_habis < Jumlah_kopi :
-    Jumlah_kopi_sudah_diminum_dan_habis = Jumlah_kopi_sudah_diminum_dan_habis + 1
-    if Jumlah_kopi_sudah_diminum_dan_habis == 0:
-        print(f"Kopi ke {Jumlah_kopi_sudah_diminum_dan_habis} belum habis")
+Jumlah_kopi_sudah_diminum_dan_habis = 0
+print(f'Jumlah kopi yang sudah diminum dan habis {Jumlah_kopi_sudah_diminum_dan_habis}')
+
+while Jumlah_kopi_sudah_diminum < Jumlah_kopi * 2:
+    Jumlah_kopi_sudah_diminum = Jumlah_kopi_sudah_diminum + 1
+    if Jumlah_kopi_sudah_diminum_dan_habis == 9:
+        print(f"Kopi ke {Jumlah_kopi_sudah_diminum_dan_habis + 1} belum habis")
     else:
         Jumlah_kopi_sudah_diminum_dan_habis = Jumlah_kopi_sudah_diminum_dan_habis + 1
         print(f"Kopi ke {Jumlah_kopi_sudah_diminum_dan_habis} sudah diminum dan habis")
+
+print(f'Jumlah kopi yang sudah diminum dan habis {Jumlah_kopi_sudah_diminum_dan_habis}')
+if Jumlah_kopi_sudah_diminum_dan_habis == Jumlah_kopi:
+    print('Levi, Semua kopi sudah diminum dan habis')
+else :
+    print(f"Levi, tidak semua kopi bisa saya habiskan, hanya {Jumlah_kopi_sudah_diminum_dan_habis} yang habis")
