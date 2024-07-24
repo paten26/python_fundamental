@@ -19,7 +19,7 @@ Daftar_kopi.append("koi") #.append untuk menambahkan data "koi"
 for i in range(0, len(Daftar_kopi)):
     print(Daftar_kopi[i])
 
-print("\nMenghapus data")
+print("\nClear data keseluruhan")
 Daftar_kopi.clear()
 for i in range(0, len(Daftar_kopi)):
     print(Daftar_kopi[i])
@@ -38,3 +38,21 @@ for i in range(0, len(Daftar_kopi)):
 
 print("\nTampilkan data yang diambil")
 print(kopi) #menampilkan data yang tadi diambil, yaitu kapalapi
+
+print("\nDelete salah satu data")
+Daftar_kopi = ["Kopken", "Janjijiwa", "Fore", "Koi"]
+del Daftar_kopi [1] #del 1 berarti menghapus data yang ke-2
+for i in range(0, len(Daftar_kopi)):
+    print(Daftar_kopi[i])
+
+print("\nDelete dengan list comprehension")
+Daftar_kopi = ["Kopken", "Janjijiwa", "Fore", "Koi"]
+del Daftar_kopi[:] #del : berarti menghapus semua data
+for i in range(0, len(Daftar_kopi)):
+    print(Daftar_kopi[i])
+
+print("\nDelete dengan list comprehension dengan start")
+Daftar_kopi = ["Kopken", "Janjijiwa", "Fore", "Koi"]
+del Daftar_kopi[0:1] #del 0:1 start 0, stop 1
+for i in range(0, len(Daftar_kopi)):
+    print(Daftar_kopi[i])
