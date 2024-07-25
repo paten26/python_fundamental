@@ -1,5 +1,7 @@
 """
 Python Dictionary / JSON
+Dictionary khusus di python
+JSON penggunaan secara umum
 """
 users = { #dictionary ditandai dengan kurung kurawal
     "id": 1,
@@ -49,3 +51,10 @@ users = {
 
 print(users)
 print(users["address"]["geo"]["lat"]) #print dictionary dalam dictionary di dalam dictionary
+
+
+#Merubah python dictionary menjadi JSON
+print("\nMerubah dictionary ke JSON")
+import json #ini adalah package python untuk merubah dictionary ke JSON
+result = json.dumps(users)
+print(result) #lihat hasilnya, jika dictionary menggunakan ", JSON menggunakan '
