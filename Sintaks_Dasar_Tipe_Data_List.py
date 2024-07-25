@@ -51,8 +51,14 @@ del Daftar_kopi[:] #del : berarti menghapus semua data
 for i in range(0, len(Daftar_kopi)):
     print(Daftar_kopi[i])
 
-print("\nDelete dengan list comprehension dengan start")
+print("\nDelete dengan list comprehension dengan start-end")
 Daftar_kopi = ["Kopken", "Janjijiwa", "Fore", "Koi"]
-del Daftar_kopi[0:1] #del 0:1 start 0, stop 1
+del Daftar_kopi[0:-1] #del [start : end] 0:1 start 0, end 1
+for i in range(0, len(Daftar_kopi)):
+    print(Daftar_kopi[i])
+
+print("\nDelete dengan list comprehension dengan start-end-step")
+Daftar_kopi = ["Kopken", "Janjijiwa", "Fore", "Koi"]
+del Daftar_kopi[0::2] #del [start: end: step]
 for i in range(0, len(Daftar_kopi)):
     print(Daftar_kopi[i])
