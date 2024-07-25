@@ -57,4 +57,4 @@ print(users["address"]["geo"]["lat"]) #print dictionary dalam dictionary di dala
 print("\nMerubah dictionary ke JSON")
 import json #ini adalah package python untuk merubah dictionary ke JSON
 result = json.dumps(users)
-print(result) #lihat hasilnya, jika dictionary menggunakan ", JSON menggunakan '
+print(result) #lihat hasilnya, jika dictionary menggunakan ", JSON menggunakan '.
