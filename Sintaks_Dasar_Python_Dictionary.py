@@ -10,8 +10,9 @@ users = { #dictionary ditandai dengan kurung kurawal
     "email": "Sincere@april.biz",
 }
 
-print (users) #jika ingin menampilkan semua
-print (users["name"]) #jika ingin menampilkan satu persatu
+print("\nDictionary")
+print(users) #jika ingin menampilkan semua
+print(users["name"]) #jika ingin menampilkan satu persatu
 
 #Dictionary di dalam dictionary
 users = {
@@ -27,6 +28,7 @@ users = {
     }
 }
 
+print("\nDictionary di dalam dictionary")
 print(users)
 print(users["address"])
 print(users["address"]["street"])
@@ -49,6 +51,7 @@ users = {
     }
 }
 
+print("\nDictionary dalam dictionary di dalam dictionary")
 print(users)
 print(users["address"]["geo"]["lat"]) #print dictionary dalam dictionary di dalam dictionary
 
